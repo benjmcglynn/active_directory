@@ -1,6 +1,6 @@
 # Connecting a Windows machine to the DC via GUI and PowerShell
 
-# Connect via GUI
+-- Connecting via GUI
 
 1. Launch 'Settings'
     - Navigate to 'Accounts'
