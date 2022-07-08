@@ -11,3 +11,28 @@
 '''shell
 Install-WindowsFeature AD-DomainServices -IncludeManagementTools
 '''
+
+'''shell
+import-Module ADDSDeployment
+Install-ADDSForest
+'''
+    - Set DomainName 'unwindmedia.local'
+    - Set SafeModeAdministratorPassword
+
+'''shell
+Y to continue (default)
+'''
+# Server will now need to reboot
+
+3. Set DNS using 'sconfig' back to IP of Domain Controller
+
+# DC is now setup to bare minimum standard
+
+3. Set DNS using PowerShell using the following commands -
+
+    - NetIPAddress
+    # finds current IP Address and Interface Index which will be needed
+    
+    - Set-DNSClientServerAddress -InterfaceIndex (Interface #) -ServerAddresses (DC IP Address)
+
+# DC is now setup to bare minimum standard
