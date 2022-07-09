@@ -16,7 +16,7 @@ Install-WindowsFeature AD-DomainServices -IncludeManagementTools
 import-Module ADDSDeployment
 Install-ADDSForest
 '''
-    - Set DomainName 'unwindmedia.local'
+    - Set DomainName 'example.local'
     - Set SafeModeAdministratorPassword
 
 '''shell
