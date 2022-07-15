@@ -9,7 +9,7 @@
 2. Install the Active Directory Service
 
 '''shell
-Install-WindowsFeature AD-DomainServices -IncludeManagementTools
+Add-WindowsFeature AD-Domain-Services -IncludeManagementTools
 '''
 
 '''shell
